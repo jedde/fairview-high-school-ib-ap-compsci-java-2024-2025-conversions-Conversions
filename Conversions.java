@@ -47,7 +47,14 @@ public class Conversions
             double Meters = Feet * 0.3048;
             System.out.println(Feet + " degree Feet is " + Meters + " Meters");
         }
-        
+        if (selection ==3)
+        {
+            System.out.println("Enter Feet: ");
+
+
+
+
+        }
         
         
 
