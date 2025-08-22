@@ -17,8 +17,10 @@ public class Conversions
         System.out.println("4. Meters to Feet");
         System.out.println("5. Ounces to Milliliters");
         System.out.println("6. Milliliters to Ounces");
-        //Add 2 more conversions, each both ways, to add choices 7, 8, 9, and 10.
-        //You can add even more if you would like.
+        System.out.println("7. Miles to Kilometers");
+        System.out.println("8. Kilometers to Miles");
+        System.out.println("9. Roblox studs to meters");
+        System.out.println("10. Meters to Roblox studs");
 
         int selection = keyboard.nextInt();
         keyboard.nextLine();  //go past the endline and be ready for more input
@@ -45,18 +47,60 @@ public class Conversions
             double Feet = keyboard.nextDouble();
             keyboard.nextLine();
             double Meters = Feet * 0.3048;
-            System.out.println(Feet + " degree Feet is " + Meters + " Meters");
+            System.out.println(Feet + "Feet is " + Meters + " Meters");
         }
-        if (selection ==3)
+        if (selection == 4)
         {
-            System.out.println("Enter Feet: ");
-
-
-
+            System.out.println("Enter Meters: ");
+            double Meters = keyboard.nextDouble();
+            keyboard.nextLine();
+            double Feet = Meters * (1/0.3048);
+            System.out.println(Meters + "Meters is " + Feet + " Feet");
+        }
+        if (selection == 5)
+        {
+            System.out.println("Enter Ounces:");
+            double Ounces = keyboard.nextDouble();
+            keyboard.nextLine();
+            double Milliliters = Ounces * 29.5735;
+            System.out.println(Ounces + " 5Ounces is " + Milliliters + " milliliters");
 
         }
-        
-        
+        if (selection == 6)
+        {
+            System.out.println("Enter Milliliters:");
+            double Milliliters = keyboard.nextDouble();
+            keyboard.nextLine();
+            double Ounces = Milliliters / 29.5735;
+            System.out.println(Milliliters + " Milliliters is " + Ounces + "Ounces");
+        }
+        if (selection == 7)
+        {
+            System.out.println("Enter Miles:");
+            Double Miles = keyboard.nextDouble();
+            keyboard.nextLine();
+            double Kilometers = Miles * 1.60934;
+            System.out.println(Miles + " Miles is " + Kilometers + " Kilometers");
+         }
+        if (selection == 8)
+        {
+            System.out.println("Enter Kilometers: ");
+            Double Kilometers = keyboard.nextDouble();
+            keyboard.nextLine();
+            Double Miles = Kilometers / 1.60934;
+            System.out.println(Kilometers + " Kilometers is " + Miles + " Miles");
+
+        }
+        if (selection == 9)
+        {
+            System.out.println("Enter Roblox studs:");
+            Double Studs = keyboard.nextDouble();
+            keyboard.nextLine();
+            Double Meters = Studs * 0.28/1;
+            System.out.println(Studs + " Roblox studs is " + Meters + "Meters");
+
+        }
+
 
 
 
@@ -65,6 +109,6 @@ public class Conversions
         }
         //add more if statements here.
     }
-}
+
 
 
