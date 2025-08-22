@@ -55,7 +55,7 @@ public class Conversions
             double Meters = keyboard.nextDouble();
             keyboard.nextLine();
             double Feet = Meters * (1/0.3048);
-            System.out.println(Meters + "Meters is " + Feet + " Feet");
+            System.out.println(Meters + " Meters is " + Feet + " Feet");
         }
         if (selection == 5)
         {
@@ -63,7 +63,7 @@ public class Conversions
             double Ounces = keyboard.nextDouble();
             keyboard.nextLine();
             double Milliliters = Ounces * 29.5735;
-            System.out.println(Ounces + " 5Ounces is " + Milliliters + " milliliters");
+            System.out.println(Ounces + " Ounces is " + Milliliters + " milliliters");
 
         }
         if (selection == 6)
@@ -98,6 +98,17 @@ public class Conversions
             keyboard.nextLine();
             Double Meters = Studs * 0.28/1;
             System.out.println(Studs + " Roblox studs is " + Meters + "Meters");
+
+        }
+        if (selection == 10)
+        {
+            System.out.println("Enter meters:");
+            Double Meters = keyboard.nextDouble();
+            keyboard.nextLine();
+            Double Studs = Meters * 1/0.28;
+            System.out.println(Meters + " Meters is " + Studs + " Roblox studs");
+
+
 
         }
 
