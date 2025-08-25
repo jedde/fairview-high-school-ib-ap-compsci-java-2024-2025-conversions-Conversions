@@ -107,11 +107,12 @@ public class Conversions
             keyboard.nextLine();
             Double Studs = Meters * 1/0.28;
             System.out.println(Meters + " Meters is " + Studs + " Roblox studs");
+        }
 
 
 
         
     }
 
-
+}
 
